@@ -43,23 +43,15 @@
     <div id="container">
         <img id="dog_image" src="https://media.tenor.com/H64XFT49dbcAAAAM/1.gif">
         <div>
-            <button id="eat" onclick="dogeat()">Eat</button>
-            <button id="dance" onclick="dogdance()">Dance</button>
-            <button id="sleep" onclick="dogsleep()">Sleep</button>
+            <button id="eat" onclick="dogactivity('https://media.tenor.com/aDcIkiR86cQAAAAj/pawsum-playpawsum.gif')">Eat</button>
+            <button id="dance" onclick="dogactivity('https://media1.tenor.com/m/QmWxjZNfSkIAAAAd/dog-dance-husky-dance.gif')">Dance</button>
+            <button id="sleep" onclick="dogactivity('https://media.tenor.com/ECHAXNPVgLQAAAA1/puppy-sleep.webp')">Sleep</button>
         </div>
     </div>
     <script>
-        function dogeat(){
+        function dogactivity(url){
             let a=document.getElementById('dog_image')
-            a.src="https://media.tenor.com/aDcIkiR86cQAAAAj/pawsum-playpawsum.gif"
-        }
-        function dogdance(){
-            let a=document.getElementById('dog_image')
-            a.src="https://media.tenor.com/QmWxjZNfSkIAAAAM/dog-dance-husky-dance.gif"
-        }
-        function dogsleep(){
-            let a=document.getElementById('dog_image')
-            a.src="https://media.tenor.com/ECHAXNPVgLQAAAA1/puppy-sleep.webp"
+            a.src=url
         }
     </script>
 </body>
