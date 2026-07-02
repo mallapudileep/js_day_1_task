@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(177, 130, 221);
+            height: 100vh;
+        }
+        button{
+            height: 50px;
+            width: 100px;
+            border-radius: 10px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        #eat{
+            background-color: chartreuse;
+            color: white;
+        }
+        #dance{
+            background-color: red;
+            color:white;
+        }
+        #sleep{
+            background-color: orange;
+            color:white;
+        }
+        #dog_image{
+            height: 400px;
+            width:400px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img id="dog_image" src="https://media.tenor.com/H64XFT49dbcAAAAM/1.gif">
+        <div>
+            <button id="eat" onclick="dogeat()">Eat</button>
+            <button id="dance" onclick="dogdance()">Dance</button>
+            <button id="sleep" onclick="dogsleep()">Sleep</button>
+        </div>
+    </div>
+    <script>
+        function dogeat(){
+            let a=document.getElementById('dog_image')
+            a.src="https://media.tenor.com/aDcIkiR86cQAAAAj/pawsum-playpawsum.gif"
+        }
+        function dogdance(){
+            let a=document.getElementById('dog_image')
+            a.src="https://media.tenor.com/QmWxjZNfSkIAAAAM/dog-dance-husky-dance.gif"
+        }
+        function dogsleep(){
+            let a=document.getElementById('dog_image')
+            a.src="https://media.tenor.com/ECHAXNPVgLQAAAA1/puppy-sleep.webp"
+        }
+    </script>
+</body>
+</html>
+
+
